@@ -23,7 +23,7 @@ with open("inputs/day_1.txt") as file:
         digits_part_2 = []
 
         for pos in range(len(line)):
-            if line[pos].isdigit():
+            if line[pos] in "0123456789":
                 digit = int(line[pos])
                 digits_part_1.append(digit)
                 digits_part_2.append(digit)
