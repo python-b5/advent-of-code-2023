@@ -18,7 +18,10 @@ with open("inputs/day_7.txt") as file:
     for line in file:
         halves = line.split(" ")
         hands_part_1.append({
-            "cards": [int(card) if card in "123456789" else special_cards[card] for card in halves[0]],
+            "cards": [
+                int(card) if card in "123456789" else special_cards[card]
+                for card in halves[0]
+            ],
             "bid": int(halves[1])
         })
 
