@@ -89,7 +89,7 @@ for part in parts:
 
 print(f"Part 1: {rating_sum}")
 
-states = [["in", [1, 4000], [1, 4000], [1, 4000], [1, 4000]]]
+states = (["in", [1, 4000], [1, 4000], [1, 4000], [1, 4000]],)
 combinations = 0
 
 while states:
