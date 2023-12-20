@@ -19,9 +19,6 @@ class FlipFlop:
         else:
             return []
 
-    def __repr__(self):
-        return f"FlipFlop: {self.destinations}"
-
 class Conjunction:
     def __init__(self, destinations):
         self.destinations = destinations
@@ -36,9 +33,6 @@ class Conjunction:
             return [(name, "low") for name in self.destinations]
         else:
             return [(name, "high") for name in self.destinations]
-
-    def __repr__(self):
-        return f"Conjunction: {self.destinations} {self.memory}"
 
 modules = {}
 conjunctions = {}
